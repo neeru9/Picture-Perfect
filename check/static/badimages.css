@@ -1,0 +1,105 @@
+.text3 {
+  position: relative;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+}
+.good {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs);
+  background-color: var(--color-black);
+  flex: 1;
+  border-radius: var(--br-xl) 0 0 var(--br-xl);
+}
+.bad,
+.good,
+.option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.bad {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs);
+  background-color: var(--color-dimgray);
+  flex: 1;
+  border-radius: 0 var(--br-xl) var(--br-xl) 0;
+}
+.option {
+  width: 230px;
+}
+.image-icon {
+  width: 300px;
+  position: relative;
+  border-radius: var(--br-3xs);
+  height: 300px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin: 10px;
+}
+.image-container {
+  display: flex;
+  padding: 20px 20px;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 36px 4px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.text5 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: center;
+}
+.button3 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs);
+  background-color: var(--color-black);
+  border-radius: var(--br-xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.to-good {
+  position: relative;
+  font-weight: 600;
+}
+.bad-images,
+.button-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.bad-images {
+  width: 100%;
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gray);
+  overflow: hidden;
+  padding: var(--padding-13xl) var(--padding-sm);
+  box-sizing: border-box;
+  gap: var(--gap-lg);
+  min-height: 700px;
+  text-align: center;
+  font-size: var(--font-size-smi);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1200px) {
+  .bad-images {
+    gap: var(--gap-71xl);
+    min-height: 1024px;
+  }
+}

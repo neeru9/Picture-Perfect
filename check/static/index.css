@@ -1,0 +1,42 @@
+.app-name,
+.launch-child {
+  cursor: pointer;
+  position: relative;
+}
+.launch-child {
+  width: 200px;
+  border-radius: 50%;
+  height: 200px;
+  object-fit: cover;
+}
+.app-name {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  font-size: var(--font-size-21xl);
+  font-weight: 700;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+}
+.launch {
+  width: 100%;
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gray);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+  min-height: 700px;
+}
+@media screen and (max-width: 1200px) {
+  .launch {
+    min-height: 1024px;
+  }
+}

@@ -1,0 +1,216 @@
+.text6 {
+  position: relative;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: center;
+}
+.good1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs);
+  background-color: var(--color-dimgray);
+  border-radius: var(--br-xl) 0 0 var(--br-xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.text7 {
+  margin: 0;
+  position: relative;
+  font-size: var(--font-size-21xl);
+  font-weight: 700;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+}
+.bad1,
+.option1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.bad1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs);
+  background-color: var(--color-black);
+  flex: 1;
+  border-radius: 0 var(--br-xl) var(--br-xl) 0;
+}
+.option1 {
+  width: 230px;
+}
+.image-icon {
+  width: 300px;
+  position: relative;
+  border-radius: var(--br-3xs);
+  height: 300px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin: 10px;
+}
+.image-container {
+  display: flex;
+  padding: 20px 20px;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 36px 4px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.text8 {
+  margin: 0;
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: center;
+}
+.button4 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs);
+  background-color: var(--color-black);
+  border-radius: var(--br-xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.from-good {
+  position: relative;
+  font-weight: 600;
+}
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.vector-icon8 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.good-images,
+.next {
+  position: relative;
+  overflow: hidden;
+}
+.next {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 100px;
+  height: 66.7px;
+  flex-shrink: 0;
+}
+.good-images {
+  width: 100%;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-10xl) var(--padding-sm);
+  box-sizing: border-box;
+  gap: var(--gap-13xl);
+  min-height: 700px;
+  text-align: center;
+  font-size: var(--font-size-smi);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1200px) {
+  .image-container1 {
+    max-width: 60%;
+  }
+  .good-images {
+    gap: var(--gap-71xl);
+    min-height: 1024px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .image-container1 {
+    flex-direction: row;
+    gap: 5.33px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+input[type="checkbox"][id^="cb"] {
+  display: none;
+}
+
+label {
+  border: 1px solid #fff;
+  padding: 10px;
+  display: block;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+label::before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+label img {
+  height: 100px;
+  width: 100px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+:checked+label {
+  border-color: #ddd;
+}
+
+:checked+label::before {
+  content: "✓";
+  background-color: grey;
+  transform: scale(1);
+}
+
+:checked+label img {
+  transform: scale(0.9);
+  box-shadow: 0 0 5px #333;
+  z-index: -1;
+}
